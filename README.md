@@ -19,6 +19,12 @@ The pipeline includes the following steps:
 * **The Context of Anomalies:** Classical methods like Z-Score fail catastrophically on skewed network data because they lack local environmental context, resulting in massive false positives. In contrast, LOF successfully finds true local anomalies by analyzing neighborhood density.
 * **Global vs. Local Outliers:** Isolation Forest is highly effective at finding extreme, global attacks on the periphery of the data, while LOF excels at finding stealthy attacks hiding near dense clusters of normal traffic.
 * **Curse of Dimensionality:** Distance-based metrics degrade in 51 dimensions. PCA successfully mitigated this, improving computational efficiency and visualization quality.
+
+
 ## Dataset 📊
 Due to GitHub's file size limits, the `cicids2017_cleaned.csv` dataset (~700MB) is not included in this repository. 
-The data was sourced from the **Canadian Institute for Cybersecurity (CIC) / Kaggle**, and the scripts are designed to run locally once the CSV is placed in the root directory.
+
+You can download the exact cleaned dataset used in this project directly from Kaggle:
+👉 [CICIDS2017 Cleaned and Preprocessed Dataset](https://www.kaggle.com/datasets/ericanacletoribeiro/cicids2017-cleaned-and-preprocessed)
+
+**Note to run the code:** Simply download the CSV file from the link above and place it in the root directory of this project before running the scripts.
